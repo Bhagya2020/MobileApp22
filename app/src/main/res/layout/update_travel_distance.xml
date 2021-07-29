@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hedingdesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical"
+        android:text="Distance Details"
+        android:textColor="#FFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/arial"
+                android:text="Date Travelled"
+                />
+
+            <TextView
+                android:id="@+id/TxtDateTraveld"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                >
+            </TextView>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnrequestvisitdata"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:background="#720b98"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/arial"
+            android:text="Request Visit"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ReyDetailslist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/edittextdesign"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="470dp"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="In Time"
+                android:textAllCaps="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtinTime"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:layout_height="35dp"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Out Time"
+                android:textAllCaps="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtOutTime"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Food allowance"
+                android:textAllCaps="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtFoodAllowance"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="110dp"
+            >
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Total Distance "
+                android:textAllCaps="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtTotDistance"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:paddingLeft="5dp"
+                android:inputType="numberDecimal"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            >
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:background="#720b98"
+                android:textAllCaps="true"
+                android:fontFamily="@font/arial"
+                android:text="Update distance"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+        </TableRow>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

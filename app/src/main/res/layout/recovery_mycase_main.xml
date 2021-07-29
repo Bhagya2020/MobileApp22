@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/mywalletmain"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/arial"
+        android:text="My Allocate"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:textSize="20dp"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:scaleType="fitXY"
+        android:background="#FFF"
+        android:layout_marginLeft="360dp"
+        android:src="@drawable/searchrecovery"/>
+
+    <Button
+        android:id="@+id/btnRNT1_2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 1 - 2"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta1_2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT2_3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 2 - 3"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta2_3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT3_5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 3 - 5"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="210dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta3_5"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT5_6"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 5 - 6"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="255dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta5_6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT6_9"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 6 - 9"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta6_9"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT9_12"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 9 - 12"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="345dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta9_12"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT12_24"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 12 - 24"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="390dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta12_24"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNT24above"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Rental 24 plus"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="435dp"/>
+
+    <TextView
+        android:id="@+id/TxtRenta24Above"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="435dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnRNTPTP"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Promise To Pay"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="480dp"/>
+
+    <TextView
+        android:id="@+id/TxtRentaPTP"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnMgrAssing"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Manager Assign"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="525dp"/>
+
+    <TextView
+        android:id="@+id/TxtRentaManager"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="525dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnMgrAction"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Action Transfer"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="570dp"/>
+
+    <TextView
+        android:id="@+id/TxtActionTranfer"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+    <Button
+        android:id="@+id/btnTotAllocate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Total Allocate"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#db8700"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="615dp"/>
+
+    <TextView
+        android:id="@+id/TxtTotAlocate"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="615dp"
+        android:layout_marginLeft="320dp"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:elevation="100dp"
+        android:textColor="#00ff00"/>
+
+</RelativeLayout>

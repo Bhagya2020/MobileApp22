@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TxtAssingCaseName"
+        android:layout_width="match_parent"
+        android:text="Meeting Request"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="#740966"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/TxtAssingFacno"
+        android:layout_width="match_parent"
+        android:text="Facility No - HLELE19201844788"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/edittextdesign"
+        android:fontFamily="@font/arial"
+        android:textColor="#740966"
+        android:layout_height="40dp"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="530dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="450dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Meeting Date"
+                android:layout_alignParentTop="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtMeetDate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Meeting Time"
+                android:layout_alignParentTop="true"
+                />
+
+
+            <EditText
+                android:id="@+id/TxtMeetTime"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Venue"
+                android:layout_alignParentTop="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtVenue"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Meeting Request by"
+                android:layout_alignParentTop="true"
+                />
+
+            <Spinner
+                android:id="@+id/spnMeetingReq"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="serif-monospace"
+                android:textColor="#9D9BA2"
+                android:textStyle="bold">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="@font/arial"
+                android:text="Comment"
+                android:layout_alignParentTop="true"
+                />
+
+            <EditText
+                android:id="@+id/TxtComment"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnLock"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#720b98"
+            android:fontFamily="@font/arial"
+            android:text="Draft"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="#720b98"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:textSize="15sp"
+            android:fontFamily="@font/arial"
+            android:textColor="#FFF"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

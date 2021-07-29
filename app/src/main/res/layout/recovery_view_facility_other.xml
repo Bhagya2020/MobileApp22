@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TxtAssingCaseName"
+        android:layout_width="match_parent"
+        android:text="Facility No - HLELE19201844788"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="#740966"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/TxtDetailsView"
+        android:layout_width="match_parent"
+        android:text="Payment Information"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="#740966"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:layout_height="40dp"
+        />
+
+    <Button
+        android:id="@+id/btnFitchData"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="95dp"
+        android:background="#720b98"
+        android:fontFamily="@font/arial"
+        android:text="Press Data Fetch"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:textSize="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReyDatView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

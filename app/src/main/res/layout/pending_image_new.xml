@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/edittextdesign"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/edittextdesign"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textview_doctype_new"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/arial"
+            android:gravity="center_vertical"
+            android:text="Line 2"
+            android:textColor="#982c97"
+            android:textSize="15dp" />
+
+
+        <TableRow
+            android:id="@+id/tableREMARKS"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:layout_height="35dp">
+
+            <ImageButton
+                android:id="@+id/Imgview"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/loginimageback"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/browse_image" />
+
+            <ImageButton
+                android:id="@+id/Imedelete"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/loginimageback"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/image_delete" />
+
+        </TableRow>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

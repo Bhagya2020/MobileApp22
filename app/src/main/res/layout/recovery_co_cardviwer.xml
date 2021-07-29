@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#FFF"
+    card_view:cardElevation="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="#eab5e9"
+        >
+
+        <TextView
+            android:id="@+id/TxtRecoveryFacno"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/arial"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            />
+
+        <TextView
+            android:id="@+id/TxtClientTyoe"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/recoveryhilitedfiled"
+            android:layout_marginLeft="240dp"
+            android:gravity="center"
+            android:fontFamily="@font/arial"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#FFF"
+            />
+
+        <TextView
+            android:id="@+id/TxtREcoveryFullyName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            />
+
+        <TextView
+            android:id="@+id/TxtRecoveryFullyName2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            />
+
+        <TextView
+            android:id="@+id/TxtAdders"
+            android:layout_width="370dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/Txtview1"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="5dp"
+            android:text="NIC     :"
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/TxtGurNic"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="120dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/Txtview2"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="5dp"
+            android:text="Client Code"
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/TxtGurClcode"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="120dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/Txtview3"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="5dp"
+            android:text="Gender:"
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/TxtGurGender"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="120dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/Txtview4"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="5dp"
+            android:text="Phone No:"
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/TxtGurPhoneNo"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="120dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <ImageButton
+            android:id="@+id/ImgCall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="250dp"
+            android:tooltipText="Call"
+            android:src="@drawable/ic_call_black_24dp"
+            android:background="#eab5e9"
+            />
+
+        <TextView
+            android:id="@+id/Txtview5"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="5dp"
+            android:text="Occupation :"
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+        <TextView
+            android:id="@+id/TxtGurOcupation"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="230dp"
+            android:text="Executive"
+            android:layout_marginLeft="120dp"
+            android:textSize="15sp"
+            android:textColor="#AD386D"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

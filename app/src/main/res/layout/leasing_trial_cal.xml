@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hedingdesign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text=" TRIAL CALCULATOR"
+                android:textColor="#FFFF"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Invoice Amount"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtinvoiceamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="DownPayment"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtclientcontbution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Leasing Amount"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtleasingamt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/disabletextdesign"
+                        android:enabled="false"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow12"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Rate"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow13"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Tenure"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtpeiod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow14"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Introducer"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtindcom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <Switch
+                        android:id="@+id/SwtindCap"
+                        android:layout_width="95dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/switchdesign"
+                        android:fontFamily="@font/arial"
+                        android:paddingLeft="5dp"
+                        android:text="Cap"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="10dp"
+                        tools:layout_editor_absoluteX="108dp"
+                        tools:layout_editor_absoluteY="582dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow15"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Service"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtservicecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <Switch
+                        android:id="@+id/SwtschCap"
+                        android:layout_width="95dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/switchdesign"
+                        android:fontFamily="@font/arial"
+                        android:paddingLeft="5dp"
+                        android:text="Cap"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="10dp"
+                        tools:layout_editor_absoluteX="108dp"
+                        tools:layout_editor_absoluteY="582dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow16"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="RMV"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtrmvcharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <Switch
+                        android:id="@+id/SwtrmvCap"
+                        android:layout_width="95dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/switchdesign"
+                        android:fontFamily="@font/arial"
+                        android:paddingLeft="5dp"
+                        android:text="Cap"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="10dp"
+                        tools:layout_editor_absoluteX="108dp"
+                        tools:layout_editor_absoluteY="582dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow17"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Insurance"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtinsurancecharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <Switch
+                        android:id="@+id/SwtincCap"
+                        android:layout_width="95dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/switchdesign"
+                        android:fontFamily="@font/arial"
+                        android:paddingLeft="5dp"
+                        android:text="Cap"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="10dp"
+                        tools:layout_editor_absoluteX="108dp"
+                        tools:layout_editor_absoluteY="582dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow18"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Transport"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txttransportcharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <Switch
+                        android:id="@+id/SwttrfCap"
+                        android:layout_width="95dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/switchdesign"
+                        android:fontFamily="@font/arial"
+                        android:paddingLeft="5dp"
+                        android:text="Cap"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="10dp"
+                        tools:layout_editor_absoluteX="108dp"
+                        tools:layout_editor_absoluteY="582dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow19"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="2dp">
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Other"
+                        android:textColor="#FFF"
+                        android:textSize="13dp"
+                        app:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/txtothercharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextdesign"
+                        android:fontFamily="@font/arial"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <Switch
+                        android:id="@+id/SwtothCap"
+                        android:layout_width="95dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/switchdesign"
+                        android:fontFamily="@font/arial"
+                        android:paddingLeft="5dp"
+                        android:text="Cap"
+                        android:textAllCaps="true"
+                        android:textColor="#FFF"
+                        android:textSize="10dp"
+                        tools:layout_editor_absoluteX="108dp"
+                        tools:layout_editor_absoluteY="582dp" />
+                </TableRow>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/tableRow23"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/fildesign"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Monthly Rental"
+                    android:textColor="#FFF"
+                    android:textSize="13dp"
+                    app:textAllCaps="true" />
+
+                <EditText
+                    android:id="@+id/txtrental"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/disabletextdesign"
+                    android:enabled="false"
+                    android:fontFamily="@font/arial"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btncalRental"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:text="Calculate Rental"
+                android:textColor="#FAF7FA"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btndraftapp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:text="Draft Application"
+                android:textColor="#FAF7FA"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

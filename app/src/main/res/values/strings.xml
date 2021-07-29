@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">AFiMOBILE</string>
+
+
+    <string name="phone_application">Application\n (New Applications , Modify , Delete , Po Request)</string>
+    <string name="phone_managerapp">Manager Approvals\n (Approve Request PO)</string>
+    <string name="phone_complete">File Complete\n (Client , Co-Application , Document Details)</string>
+    <string name="phone_visit">House Visits\n (Application , Co-Application)</string>
+    <string name="phone_trialcal">Trial Calculation\n (Renatl Calculate For Leasing,Loan)</string>
+    <string name="phone_setting">Settings\n (Master , Password Update)</string>
+
+
+    <string name="button_text"><font size="20">First line!</font>\n\<font size="10">Second line!</font></string>
+    <string name="html"><![CDATA[<p>Text</p>]]></string>
+    <string name="welcome">Welcome to <b>Android</b>!</string>
+
+
+    <string name="recovery_allcase">Allocated\nCases</string>
+    <string name="lock_allcase">Locked\nCases</string>
+    <string name="visit_allcase">Visit\nCases</string>
+    <string name="fully_allcase">Full Paid\nCases</string>
+    <string name="fullysett_allcase">Full Settle\nCases</string>
+    <string name="Rental_allcase">Rental Only\nCases</string>
+    <string name="Action_allcase">Action\nAssign</string>
+    <string name="Actionmgr_allcase">Manager \nAssign</string>
+    <string name="Actiondone_allcase">Repossess \nCases</string>
+    <string name="title_activity_recovery_location__map">Map</string>
+</resources>

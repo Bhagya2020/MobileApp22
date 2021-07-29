@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#eab5e9">
+
+        <TableRow
+            android:layout_width="390dp"
+            android:layout_height="25dp">
+
+            <TextView
+                android:id="@+id/TxtRecyNoteDate"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/TxtRecyNoteUser"
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/TxtRecyNoteDes1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/TxtRecyNoteDes2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="45dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

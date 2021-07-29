@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#f2d4f2"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/Txtfacilityno"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btnedit"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="50dp"
+                android:text="Details" />
+        </TableRow>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

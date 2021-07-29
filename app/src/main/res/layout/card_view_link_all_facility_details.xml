@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="318dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#FFF"
+    card_view:cardElevation="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeetails"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/recovery_card_new"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="30dp">
+
+
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Facility No"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtfacilityno"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Facility Amount"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtfacamount"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Rental Mature"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtrntmmature"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="95dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Rental Arrays"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtrntarrays"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Last Pay Date"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtlastpaydate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="155dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Last Pay Amount"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtlastpayamt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="185dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Average Payment"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtavgpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="215dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Total Arrays"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txttotarrays"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="245dp"
+            android:layout_marginLeft="40dp"
+
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Total Settlement"
+                android:textSize="13dp"
+                android:textColor="#68156B"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txttotsettlement"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="2021-04-21"
+                android:textColor="#68156B"
+                android:textSize="13dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tablebutton"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="280dp"
+            android:layout_height="30dp">
+
+            <Button
+                android:id="@+id/btnpayment"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:text="Payment" />
+
+            <Button
+                android:id="@+id/btnnotepaid"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:text="NotePaid" />
+
+            <Button
+                android:id="@+id/btnCodetails"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:text="Co.Appli" />
+
+            <Button
+                android:id="@+id/btnallDetails"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:textColor="#FFF"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:text="All Details" />
+        </TableRow>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

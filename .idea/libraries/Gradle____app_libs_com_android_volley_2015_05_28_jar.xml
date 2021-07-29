@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/com.android.volley-2015.05.28.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/com.android.volley-2015.05.28.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

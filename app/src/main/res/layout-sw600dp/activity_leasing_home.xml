@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/leasing_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lehome"
+    tools:context=".LeasingHome">
+
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/flotbutton"
+        android:layout_width="65dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="672dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:fabGravity="bottom_end"
+        app:fabMenu="@menu/main_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="@+id/propicture"
+        app:layout_constraintTop_toTopOf="@+id/TxtDataSts"
+        app:miniFabBackgroundTint="@android:color/white"
+        app:miniFabDrawableTint="?attr/colorPrimaryDark"
+        app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
+    <ImageButton
+        android:id="@+id/Imginformastion"
+        android:layout_width="61dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mainbuttonnew"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout" />
+
+
+    <ImageButton
+        android:id="@+id/Imglogout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/mainbuttonnew"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout" />
+
+
+    <ImageButton
+        android:id="@+id/ImgBtnsys"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/mainbuttonnew"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="@+id/propicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/notificationnew" />
+
+    <ImageButton
+        android:id="@+id/ImgDataSyn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mainbuttonnew"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sysnew" />
+
+
+    <TextView
+        android:id="@+id/txtnotficationcount"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="171dp"
+        android:layout_marginRight="171dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/notificationhome"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:scrollHorizontally="true"
+        android:text="1"
+        android:textColor="#FF0000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/propicture"
+        app:layout_constraintEnd_toStartOf="@+id/txtdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="410dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical|left|start"
+        android:text="Bhagya Neranjana"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        app:fontFamily="@font/arial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical"
+        android:text="2020-04-16"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        app:fontFamily="@font/arial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/propicture"
+        android:layout_width="124dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/welcome1"
+        app:civ_border_color="#AD386D"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btnapplication"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="640dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/app_home_btn"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/arial"
+        android:layout_marginLeft="20dp"
+        android:text="Manage Applications"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="76dp" />
+
+
+    <Button
+        android:id="@+id/btncomplete"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="540dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/com_home_btn"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="Complete Applications"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnvisit"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="328dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/hou_home_btn"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:text="House Visit"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnTrialCal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="440dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/tri_home_btn"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="Trial Calculation"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtDataSts"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginLeft="312dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical|left|start"
+        android:text="OFFLINE"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnmanagerapprove"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/man_house_btn"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="Manager Approvals"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnsetting"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="216dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/set_home_btn"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="Settings"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

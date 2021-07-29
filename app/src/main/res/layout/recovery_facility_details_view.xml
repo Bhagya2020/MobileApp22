@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFF">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/recoveryhedingmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical"
+        android:text="My Wallet --> Facility Details"
+        android:textColor="#FFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        >
+
+        <TextView
+            android:id="@+id/TxtAssingCaseName"
+            android:layout_width="match_parent"
+            android:text="Facility No - HLELE19201844788"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="#740966"
+            android:fontFamily="@font/arial"
+            android:textColor="#FFF"
+            android:layout_height="40dp"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="446dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="130dp">
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#740966"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Customer Information"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial"
+                android:text="Customer Fully Name"
+                android:textColor="#740966"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TxtClfullyName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TxtClfullyName2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:padding="3dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial"
+                android:text="Customer Adders"
+                android:textColor="#740966"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TxtClAdder"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TxtClAdder2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:padding="3dp"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial"
+                android:text="WorkPlace Adders"
+                android:textColor="#740966"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TxtClworladders"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TxtClworladders2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp" />
+
+            <TableRow
+                android:id="@+id/tableRow29"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Customer NIC"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Txtclnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Customer Code"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Txtclcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Occupancy"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacOcupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Mobile No 1"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacMobileNo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Mobile No 2"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacMobileNo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Gender"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#740966"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Facility Information"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Product"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Facility amount"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Facility Branch"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Due Date"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacDueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Recover Executive"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacRecCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Recover PhoneNo"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacRecPhoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Marketing Executive"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacMakOfficer"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Marketing Phone No"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacMakPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Follow Up Officer"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacFollwOfficer"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Follow PhoneNo"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacFollwOPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Activate Date"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacActDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Expire Date"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacExpireDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Disbursed Amount"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacDisamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Capitalized Amt"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacCaplizedAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Rate of Interest"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacIntRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Tenure"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Rental Amount"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacRentalamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Facility Status"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacFacsts"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Contract Status"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacConsts"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="No Of DownPay"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Vehicle No"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacVehno"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Asset Model"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacAssModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#740966"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Arrears Information"
+                android:textColor="#FFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Rental Matured"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacRentalMat"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Rental Paid"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacRentaPaid"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="No Rental Arrears"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoRentalArrays"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Rental Arrears Amt"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoRentalArraysamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Insurance Arrears Amt"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoInsArraysamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="OD Arrears Amt"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoODArraysamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Other Arrears Amt"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoOtherArraysamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Total Arrears "
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacNoTotalArraysamt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryhilitedfiled"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="LastPaid Date "
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacLastPaidDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="LastPaid Amount"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacLastPaidAmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Future Capital"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacFutCapital"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Future Interest"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacFutInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryedittexyt"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Total Settlement"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtFacTotSettlement"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/recoveryhilitedfiled"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/btnGurDetails"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:background="#db8700"
+                android:fontFamily="@font/arial"
+                android:text="Co-Applicant Information"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnPaymentDetails"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="#db8700"
+                android:fontFamily="@font/arial"
+                android:text="Payment Information"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnNitepadDetails"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="#db8700"
+                android:fontFamily="@font/arial"
+                android:text="Notepad Information"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnActionHis"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="#db8700"
+                android:fontFamily="@font/arial"
+                android:text="Action History"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnIfrsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="#db8700"
+                android:fontFamily="@font/arial"
+                android:text="IFRS Collection"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnlink_Facility"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="#db8700"
+                android:fontFamily="@font/arial"
+                android:text="Link Facility"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center"
+        android:text="FeedBack"
+        android:textSize="20dp" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spnActionUpdate"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:textSize="15sp"
+        android:background="@drawable/recoveryedittexyt"
+        android:gravity="center"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textStyle="bold">
+    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+    <Button
+        android:id="@+id/btnActionUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Action Transfer"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="#720b98"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+
+</RelativeLayout>

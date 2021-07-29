@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/hedingdesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="RE-FINANCE CHECK"
+        android:textColor="#FFFF"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radiotype"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/edittextdesign"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioOwncom"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:fontFamily="@font/arial"
+            android:text="Own"
+            android:textAllCaps="true"
+            android:textSize="13dp" />
+
+        <RadioButton
+            android:id="@+id/radioOthcom"
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/arial"
+            android:text="other party"
+            android:textAllCaps="true"
+            android:textSize="13dp" />
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/own_layout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="VEHICEL NO"
+                android:textColor="#FFF"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/txTVEHNO"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/approve_edittxt"
+                android:digits="0123456789VXvx"
+                android:fontFamily="@font/arial"
+                android:inputType="textCapCharacters"
+                android:maxLength="20"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="42dp">
+
+            <Button
+                android:id="@+id/btnownSERCH"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="CHECK"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="84dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="SETTLEMENT"
+                android:textColor="#FFF"
+                android:textSize="13dp"
+                app:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/txtsettlement"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/disabletextdesign"
+                android:fontFamily="@font/arial"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="124dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="NEW FINANCE"
+                android:textColor="#FFF"
+                android:textSize="13dp"
+                app:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/txtleasingamt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/disabletextdesign"
+                android:fontFamily="@font/arial"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="164dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="balances"
+                android:textColor="#FFF"
+                android:textSize="13dp"
+                app:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/txtbalamt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/disabletextdesign"
+                android:fontFamily="@font/arial"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="204dp">
+
+            <Button
+                android:id="@+id/btnownupdate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="update"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+        </TableRow>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeOth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow25"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Other company"
+                android:textColor="#FFF"
+                android:textSize="13dp"
+                app:textAllCaps="true" />
+
+            <Spinner
+                android:id="@+id/spneqtype"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:textColor="#9D9BA2">
+
+            </Spinner>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="48dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="INVOICE AMOUNT"
+                android:textColor="#FFF"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/txtINVAMT"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/approve_edittxt"
+                android:digits="0123456789VXvx"
+                android:fontFamily="@font/arial"
+                android:inputType="textCapCharacters"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="86dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:cursorVisible="true"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="INVOICE DATE"
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/txtinvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/approve_edittxt"
+                android:cursorVisible="true"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="124dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:cursorVisible="true"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="VALID DAYS"
+                android:textAllCaps="true"
+                android:textColor="#FFF"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/txtVALDATE"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/approve_edittxt"
+                android:cursorVisible="true"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:paddingLeft="10dp"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="162dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="NEW FINANCE"
+                android:textColor="#FFF"
+                android:textSize="13dp"
+                app:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/txtoTH_leasingamt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/disabletextdesign"
+                android:fontFamily="@font/arial"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="200dp">
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="30dp"
+                android:background="@drawable/fildesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="balances"
+                android:textColor="#FFF"
+                android:textSize="13dp"
+                app:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/txtOTH_balamt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/disabletextdesign"
+                android:fontFamily="@font/arial"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="240dp">
+
+            <Button
+                android:id="@+id/btn_OTHupdate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="update"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnAddCase"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#720b98"
+                android:fontFamily="@font/arial"
+                android:text="Add Case My Wallet"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="400dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="278dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ReyFacList"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

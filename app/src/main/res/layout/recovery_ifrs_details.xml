@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hedingdesign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="IFRS Collection Detals"
+                android:textAllCaps="true"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/edittextdesign"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/arial"
+            android:text="Minimum Amount to be Collected"
+            android:background="#740966"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/arial"
+            android:text="NRA Below 3"
+            android:background=" #ca60d1"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginTop="45dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center"
+            >
+        </TextView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Current Month Due"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_3_currentdue"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="135dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="RNT to be Collected"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_3_rnt_collected"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="170dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="OTH to be Collected"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_3_oth_collected"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="205dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Total to be Collected"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_3_total_collected"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/collection"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="240dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="After NRA"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_3_after_nra"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/collection"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/arial"
+            android:text="NRA Below 6"
+            android:background=" #ca60d1"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginTop="290dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical|center">
+
+        </TextView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="345dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Current Month Due"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_6_currentdue"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="380dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="RNT to be Collected"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_6_rnt_collected"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="415dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="OTH to be Collected"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_6_oth_collected"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edittextdesign"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="450dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="Total to be Collected"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_6_total_collected"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/collection"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="485dp"
+            >
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="28dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:text="After NRA"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbelw_6_after_nra"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/collection"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

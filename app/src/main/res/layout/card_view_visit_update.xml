@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#a12f30"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/Txtserieal"
+                android:layout_width="40dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="1"
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/Txtfacilityno"
+                android:layout_width="170dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="HOLEMB200001234500"
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/TxtActioncode"
+                android:layout_width="60dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="PTP"
+                android:textSize="15dp"
+                android:textColor="#FFF"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

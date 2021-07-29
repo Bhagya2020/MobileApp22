@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFF"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btncheck"
+        android:layout_width="193dp"
+        android:layout_height="138dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="404dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/hou_home_btn"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/arial"
+        android:text="CR Checking"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnupdateverify"
+        android:layout_width="193dp"
+        android:layout_height="138dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="236dp"
+        android:background="@drawable/mainbuttonnew"
+        android:drawableLeft="@drawable/app_home_btn"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/arial"
+        android:text="CR Verification"
+        android:textAllCaps="false"
+        android:textColor="#A73297"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/leasinghomesample"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/imgrmvupdate"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/mainbuttonnew"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sysnew" />
+
+    <TextView
+        android:id="@+id/txtusername2"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/arial"
+        android:text="RMV Clarification"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/arial"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="106dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical"
+        android:text="2020-04-16"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15dp"
+        app:fontFamily="@font/arial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="250dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical|left|start"
+        android:text="Bhagya Neranjana"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18dp"
+        app:fontFamily="@font/arial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <RelativeLayout
+        android:layout_width="396dp"
+        android:layout_height="150dp"
+        android:layout_margin="7dp"
+        android:background="@drawable/recovery_recycle_design"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TxtFacno"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="HOLELE2012478925"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Request Officer :"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:id="@+id/TextRequestby"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Request Date :"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:id="@+id/TextRequestDate"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="60dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="85dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Request Reason :"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:id="@+id/TextRequestReason"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="85dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="110dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:text="Comment :"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <TextView
+            android:id="@+id/TextRequestcomment"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="110dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="150dp"
+            android:textColor="#740966"
+            android:fontFamily="@font/poppinsregular"
+            />
+
+        <ImageButton
+            android:id="@+id/ImgViewdoc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="3dp"
+            android:tooltipText="View Details"
+            android:layout_marginLeft="355dp"
+            android:src="@drawable/recdoc"
+            android:background="#cfcfdd"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

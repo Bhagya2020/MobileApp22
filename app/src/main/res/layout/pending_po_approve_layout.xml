@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:padding="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="1dp"
+    card_view:cardElevation="0dp"
+    app:layout_constraintCircleRadius="0dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/scroolviewdesign"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_appno"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/arial"
+            android:text="Line 1"
+            android:textColor="#AD386D"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textview_Clname"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/arial"
+            android:text="Line 2"
+            android:layout_marginLeft="10dp"
+            android:textColor="#AD386D"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textview_nic"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="289dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/arial"
+            android:text="Line 3"
+            android:textColor="#AD386D"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textview_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/arial"
+            android:text="Line 4"
+            android:textColor="#AD386D"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textview_mkofficer"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/arial"
+            android:text="Line 5"
+            android:textColor="#AD386D"
+            android:textSize="13dp" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

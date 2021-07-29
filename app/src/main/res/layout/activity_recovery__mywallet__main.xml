@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".Recovery_Mywallet_Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/recoveryhedingmain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/arial"
+            android:gravity="center|start|left"
+            android:text="Recovery Actions"
+            android:textColor="#FFFF"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/propicture2"
+            android:layout_width="117dp"
+            android:layout_height="40dp"
+            android:foregroundGravity="right"
+            android:src="@drawable/welcome1"
+            app:civ_border_color="#AD386D"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:foregroundGravity="top|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:foregroundGravity="top"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:id="@+id/tableLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|start|top"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|top">
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Allocated"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Draft"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Visited"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Paid"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/EditAlocateCase"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/EditLocakCase"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/EditVistCase"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/EditFullypaid"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="90dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Escalations"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Comment"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Legal"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="98dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppinsregular"
+                                android:gravity="center_horizontal"
+                                android:text="Reposs."
+                                android:textSize="15dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/EditManagerAccign"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/EditActionCase"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/EditLegal"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/EditRepocesscase"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/rrecoveryoverview"
+                                android:gravity="center_horizontal"
+                                android:text="0"
+                                android:textColor="#740966"
+                                android:textSize="25dp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT1_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 1 - 2"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta1_2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT2_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 2 - 3"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta2_3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT3_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 3 - 5"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta3_5"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT5_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 5 - 6"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta5_6"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT6_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 6 - 9"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta6_9"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT9_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 9 - 12"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta9_12"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT12_24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 12 - 24"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta12_24"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNT24above"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Rental 24 plus"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRenta24Above"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRNTPTP"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Promise To Pay"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TxtRentaPTP"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnTotAllocate"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_weight="1"
+                                android:background="#D50000"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Special Allocated"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/TxtTotAlocate"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="100dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#00ff00"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#FFFFFF"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnRecAction"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="#720b98"
+                                android:fontFamily="@font/poppinsregular"
+                                android:text="Recovery Action"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

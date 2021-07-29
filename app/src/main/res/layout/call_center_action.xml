@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hedingdesign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="Call Center Action Review"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp">
+
+        <ImageButton
+            android:id="@+id/Imgupdate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icons8_database_100px_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ImgDataSync"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ImgDataSync"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/icons8_synchronize_100px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:layout_marginLeft="150dp"
+            android:text="Overview Details"
+            android:textColor="#9600A0"
+            android:textSize="20dp"
+            android:textStyle="normal"
+             />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:background="@drawable/hedingdesign"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="All Summery"
+            android:textSize="15dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginTop="70dp"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/arial"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/fildesign"
+                android:text=" Current PTP"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtcurrentptp"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:background="@drawable/edittextdesign"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="0"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginTop="105dp"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/arial"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/fildesign"
+                android:text=" Un-Contact"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtuncontact"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:background="@drawable/edittextdesign"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginTop="140dp"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/arial"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/fildesign"
+                android:text=" Broken PTP"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtbrokenPTP"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center"
+                android:background="@drawable/edittextdesign"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textSize="15dp" />
+        </TableRow>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="310dp"
+        >
+
+        <Button
+            android:id="@+id/btnptp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#720b98"
+            android:fontFamily="@font/arial"
+            android:text="PTP Details"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnuncontact"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#720b98"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/arial"
+            android:text="Un-contact Details"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnbrokenptpdetails"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#720b98"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/arial"
+            android:text="Broken PTP"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnmycase"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#720b98"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/arial"
+            android:text="My Wallet"
+            android:textAllCaps="true"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

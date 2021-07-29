@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#f2d4f2"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/Txtserieal"
+                android:layout_width="40dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="1"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/Txtactiondate"
+                android:layout_width="80dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="24-12-2020"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/Txtfacilityno"
+                android:layout_width="170dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="HOLEMB200001234500"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/TxtACTIONCODE"
+                android:layout_width="60dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="PTP"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:background="#f2d4f2"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="Locations"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/txtlocaLon"
+                android:layout_width="130dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="1"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/TxtLocLat"
+                android:layout_width="130dp"
+                android:layout_margin="5dp"
+                android:layout_height="30dp"
+                android:text="2"
+                android:textSize="15dp"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+
+
+
+        </TableRow>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

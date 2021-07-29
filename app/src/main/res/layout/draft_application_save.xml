@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hedingdesign"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="DRAFT APPLICATION"
+                    android:textColor="#FFFF"
+                    android:textSize="25dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="135dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fildesign"
+                                android:fontFamily="@font/arial"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Nic"
+                                android:textColor="#FFF"
+                                android:textSize="13dp"
+                                app:textAllCaps="true" />
+
+                            <EditText
+                                android:id="@+id/txtclNIC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/edittextdesign"
+                                android:digits="0123456789VXvx"
+                                android:fontFamily="@font/arial"
+                                android:maxLength="12"
+                                android:paddingLeft="5dp"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="135dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fildesign"
+                                android:fontFamily="@font/arial"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="Title"
+                                android:textColor="#FFF"
+                                android:textSize="13dp"
+                                app:textAllCaps="true" />
+
+                            <Spinner
+                                android:id="@+id/txtTITLE"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/edittextdesign">
+
+                            </Spinner>
+                        </TableRow>
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Client Name"
+                            android:textColor="#FFF"
+                            android:textSize="13dp"
+                            app:textAllCaps="true" />
+
+                        <EditText
+                            android:id="@+id/txtclname"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/edittextdesign"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="5dp"
+                            android:textColor="#000000"
+                            android:textSize="15dp" />
+
+
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="135dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fildesign"
+                                android:cursorVisible="true"
+                                android:fontFamily="@font/arial"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="ADDRESS 1"
+                                android:textAllCaps="true"
+                                android:textColor="#FFF"
+                                android:textSize="13dp" />
+
+                            <EditText
+                                android:id="@+id/txtadd1"
+                                style="@style/Widget.AppCompat.EditText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/edittextdesign"
+                                android:cursorVisible="true"
+                                android:fontFamily="@font/arial"
+                                android:inputType="textCapCharacters"
+                                android:paddingLeft="5dp"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                android:textColor="#000000"
+                                android:textSize="15dp"
+
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="135dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fildesign"
+                                android:fontFamily="@font/arial"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="ADDRESS 2"
+                                android:textColor="#FFF"
+                                android:textSize="13dp"
+                                app:textAllCaps="true" />
+
+                            <EditText
+                                android:id="@+id/txtadd2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/edittextdesign"
+                                android:fontFamily="@font/arial"
+                                android:inputType="textCapCharacters"
+                                android:paddingLeft="5dp"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="135dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fildesign"
+                                android:fontFamily="@font/arial"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="ADDRESS 3"
+                                android:textColor="#FFF"
+                                android:textSize="13dp"
+                                app:textAllCaps="true" />
+
+                            <EditText
+                                android:id="@+id/txtadd3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/edittextdesign"
+                                android:fontFamily="@font/arial"
+                                android:inputType="textCapCharacters"
+                                android:paddingLeft="5dp"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tableRow5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="135dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/fildesign"
+                                android:fontFamily="@font/arial"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="ADDRESS 4"
+                                android:textColor="#FFF"
+                                android:textSize="13dp"
+                                app:textAllCaps="true" />
+
+                            <EditText
+                                android:id="@+id/txtadd4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/edittextdesign"
+                                android:fontFamily="@font/arial"
+                                android:inputType="textCapCharacters"
+                                android:paddingLeft="5dp"
+                                android:textColor="#000000"
+                                android:textSize="15dp" />
+                        </TableRow>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnTagUpdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/normalbutton"
+                            android:fontFamily="@font/arial"
+                            android:foreground="?android:attr/selectableItemBackground"
+                            android:gravity="center"
+                            android:text="GEO Tag Draft"
+                            android:textColor="#FFF"
+                            android:textSize="15dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rcgurdetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="213dp"
+                            android:clickable="true" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

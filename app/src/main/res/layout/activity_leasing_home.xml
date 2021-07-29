@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/leasing_home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LeasingHome">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:background="@drawable/leasinghomesample"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtnotficationcount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/notificationhome"
+                android:ellipsize="none"
+                android:gravity="center|left"
+                android:scrollHorizontally="true"
+                android:text="1"
+                android:textColor="#FF0000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/arial"
+                android:gravity="right"
+                android:text="2020-04-16"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                app:fontFamily="@font/arial" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/propicture"
+                android:layout_width="83dp"
+                android:layout_height="79dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/welcome1"
+                app:civ_border_color="#AD386D"
+                app:civ_border_width="1dp"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtusername"
+                    android:layout_width="250dp"
+                    android:layout_height="23dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical|left|start"
+                    android:text="Bhagya Neranjana"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    app:fontFamily="@font/arial" />
+
+                <TextView
+                    android:id="@+id/TxtDataSts"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/arial"
+                    android:text="OFFLINE"
+                    android:textAllCaps="true"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnapplication"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonnew"
+                        android:drawableLeft="@drawable/app_home_btn"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/arial"
+                        android:text="Manage Applications"
+                        android:textAllCaps="false"
+                        android:textColor="#A73297"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btncomplete"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonnew"
+                        android:drawableLeft="@drawable/com_home_btn"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="top"
+                        android:gravity="center"
+                        android:text="Complete Applications"
+                        android:textAllCaps="false"
+                        android:textColor="#A73297"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btnvisit"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonnew"
+                        android:drawableLeft="@drawable/hou_home_btn"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="top"
+                        android:gravity="center"
+                        android:text="House Visit"
+                        android:textAllCaps="false"
+                        android:textColor="#A73297"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btnTrialCal"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonnew"
+                        android:drawableLeft="@drawable/tri_home_btn"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="top"
+                        android:gravity="center"
+                        android:text="Trial Calculation"
+                        android:textAllCaps="false"
+                        android:textColor="#A73297"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btnsetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonnew"
+                        android:drawableLeft="@drawable/set_home_btn"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="top"
+                        android:gravity="center"
+                        android:text="Settings"
+                        android:textAllCaps="false"
+                        android:textColor="#A73297"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:id="@+id/btnmanagerapprove"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="1"
+                        android:background="@drawable/mainbuttonnew"
+                        android:drawableLeft="@drawable/man_house_btn"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="top"
+                        android:gravity="center"
+                        android:text="Manager Approvals"
+                        android:textAllCaps="false"
+                        android:textColor="#A73297"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/flotbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        app:fabGravity="bottom_end"
+        app:fabMenu="@menu/main_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:miniFabBackgroundTint="@android:color/white"
+        app:miniFabDrawableTint="?attr/colorPrimaryDark"
+        app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="50dp"
+        android:paddingRight="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout10"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout10">
+
+        <ImageButton
+            android:id="@+id/Imglogout"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/loginimageback"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icons8_shutdown_96px" />
+
+        <ImageButton
+            android:id="@+id/Imginformastion"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/loginimageback"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icons8_info_96px" />
+
+        <ImageButton
+            android:id="@+id/ImgBtnsys"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/loginimageback"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icons8_notification_96px" />
+
+        <ImageButton
+            android:id="@+id/ImgDataSyn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/loginimageback"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icons8_update_left_rotation_96px" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

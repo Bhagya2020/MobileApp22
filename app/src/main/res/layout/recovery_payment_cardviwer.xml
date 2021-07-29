@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="#eab5e9">
+
+        <TableRow
+        android:layout_width="390dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/TxtRecyPayDate"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/TxtRecyPayRecNo"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="fill_vertical"
+            />
+
+
+        <TextView
+            android:id="@+id/TxtRecyPayaMT"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:text=""
+            android:textSize="15dp"
+            android:gravity="fill_vertical"
+
+            />
+
+            <TextView
+                android:id="@+id/TxtPaymode"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="1dp"
+                android:textStyle="bold"
+                android:text=""
+                android:textSize="15dp"
+                android:gravity="fill_vertical"
+
+                />
+        </TableRow>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

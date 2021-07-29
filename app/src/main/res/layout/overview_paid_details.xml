@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReyFacList"
+        android:layout_width="match_parent"
+        android:layout_height="555dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="196dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/TxtAssingCaseName"
+        android:layout_width="match_parent"
+        android:text="Paid Overview Summery"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:background="#740966"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="#FFF"
+        android:layout_height="40dp"
+        />
+
+    <Button
+        android:id="@+id/btnfullyPaid"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:background="#db8700"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Full Payments"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnpartPaid"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:background="#db8700"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Partial Payments "
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnsettle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        android:background="#db8700"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Fully Settled"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+</RelativeLayout>

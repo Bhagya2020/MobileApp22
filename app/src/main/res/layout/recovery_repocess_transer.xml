@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/recoveryhedingmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/arial"
+        android:gravity="center_vertical"
+        android:text="Request Repossess Action"
+        android:textColor="#FFFF"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/RetiveMainData"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittextdesign"
+        android:layout_height="285dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif-monospace"
+            android:text=" FACILITYU NO :"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtFacno"
+            android:layout_width="235dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif-monospace"
+            android:text=" CLIENT NAME :"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtClname"
+            android:layout_width="235dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:fontFamily="serif-monospace"
+            android:text=" ADDERS :"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtAdders"
+            android:layout_width="235dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:fontFamily="serif-monospace"
+            android:text=" VEHICLE NO "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtVehmo"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="105dp"
+            android:fontFamily="serif-monospace"
+            android:text=" MAKE "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtMake"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="105dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="130dp"
+            android:fontFamily="serif-monospace"
+            android:text=" MODEL "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtModel"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="130dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="155dp"
+            android:fontFamily="serif-monospace"
+            android:text=" NO RNT ARREARS "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtNoRnt"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="155dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="180dp"
+            android:fontFamily="serif-monospace"
+            android:text=" TOTAL ARREARS "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtTotarrays"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="180dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="205dp"
+            android:fontFamily="serif-monospace"
+            android:text=" FUTURE CAPITAL "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtFutCap"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="205dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="230dp"
+            android:fontFamily="serif-monospace"
+            android:text=" FUTURE INTEREST "
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtFutInt"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="230dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#AD386D"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="255dp"
+            android:fontFamily="serif-monospace"
+            android:text=" FULLY SETTLEMENT "
+            android:textColor="#FF0000"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/TxtFuLLYSETT"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="255dp"
+            android:textAllCaps="true"
+            android:fontFamily="serif-monospace"
+            android:text=" aaaa"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/arial"
+        android:layout_marginTop="400dp"
+        android:text="Assign Sizer"
+        android:layout_alignParentTop="true"
+        />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spnsizercode"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="10dp"
+        android:background="@drawable/recoveryedittexyt"
+        android:fontFamily="@font/arial"
+        android:textColor="#9D9BA2"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold">
+    </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/arial"
+        android:text="Repossess Reason"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="485dp"/>
+
+    <EditText
+        android:id="@+id/TxtRepReson"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="15sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/recoveryedittexyt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="515dp"
+        android:fontFamily="@font/arial"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/arial"
+        android:text="Comment"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="570dp"/>
+
+    <EditText
+        android:id="@+id/Txtcomment"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="15sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/recoveryedittexyt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="600dp"
+        android:fontFamily="@font/arial"
+        />
+
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#720b98"
+            android:fontFamily="@font/arial"
+            android:text="Draft"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnclear"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="190dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:background="#720b98"
+            android:textAllCaps="false"
+            android:text="Clear"
+            android:textSize="15sp"
+            android:fontFamily="@font/arial"
+            android:textColor="#FFF"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

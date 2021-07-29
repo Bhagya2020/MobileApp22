@@ -1,0 +1,1355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".ApplcationSubmitMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hedingdesign"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="APPLICATION DETAILS"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/TxtDataSts"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="OFFLINE"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView10" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAPPNO"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittextdesign"
+            android:fontFamily="@font/arial"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text=""
+            android:textColor="#AD386D"
+            android:textColorLink="#FFB300"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <ScrollView
+                android:id="@+id/scroreldata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/edittextdesign">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="2dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtdispfullyname"
+                        android:layout_width="243dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="CLIENT NAME"
+                        android:textColor="#FFF"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/txtFULLYNAME"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/approve_edittxt"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Client Name"
+                        android:textColor="#040101"
+                        android:textColorLink="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/txtdisplay1"
+                        android:layout_width="243dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/fildesign"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="center"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="CLIENT ADDRESS"
+                        android:textColor="#FFF"
+                        android:textColorLink="#000000"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/txtADDERS"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/approve_edittxt"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Client FullyName"
+                        android:textColor="#000000"
+                        android:textSize="13dp" />
+
+                    <TableRow
+                        android:id="@+id/tableRow100"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:id="@+id/txtdisplay2"
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="PHONE NO"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtphoneno"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:text=""
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+
+                    <TextView
+                        android:id="@+id/txtdisplay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center"
+                        android:text="Product Details"
+                        android:textColor="#A73297"
+                        android:textSize="20sp" />
+
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="PRODUCT"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtPRODUCT"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="MARKET VALUE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtMKVAL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="INVOICE AMOUNT"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFf"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtINVAMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="DOWN PAYMENT"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtCLIENTCON"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="FACILITY AMOUNT"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtFACAMT"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="EXPOSURE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtEXP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="RATE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtRATE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="TENURE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtPERIOD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+
+                    <TextView
+                        android:id="@+id/txtdisplay5"
+                        android:layout_width="395dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="Charges Details"
+                        android:textColor="#A73297"
+                        android:textColorLink="#FFB300"
+                        android:textSize="20dp" />
+
+
+                    <TableRow
+                        android:id="@+id/tableRow10"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="Introducer"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtINDAMT"
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtINDAMTCAP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow11"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="SERVICE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtSCHAMT"
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtSCHCAP"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow12"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical|left|start"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="RMV "
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtRMVAMT"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtRMVCAP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow14"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="TRANSPORT"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtTRAAMT"
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtTRACAP"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow13"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="INSURANCE"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtINSAMT"
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtINSCAP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow15"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="OTHER"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtOTHAMT"
+                            android:layout_width="170dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtOTHCAP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="2dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+                    </TableRow>
+
+                    <TextView
+                        android:id="@+id/txtdisplay4"
+                        android:layout_width="395dp"
+                        android:layout_height="27dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/arial"
+                        android:gravity="center"
+                        android:text="Facility Details"
+                        android:textColor="#A73297"
+                        android:textColorLink="#FFB300"
+                        android:textSize="20sp" />
+
+
+                    <TableRow
+                        android:id="@+id/tableRow16"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="LEASING AMOUNT"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtFINACEAMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow17"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="CAPITALIZED"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtCAPAMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:id="@+id/tableRow18"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="UP-FRONT AMOUNT"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtUPFORNT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow19"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="RENTAL AMOUNT"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtRENTAL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TextView
+                        android:id="@+id/txtdisplay6"
+                        android:layout_width="395dp"
+                        android:layout_height="27dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/arial"
+                        android:foregroundGravity="center_vertical"
+                        android:gravity="center"
+                        android:text="Asset Details"
+                        android:textColor="#A73297"
+                        android:textColorLink="#FFB300"
+                        android:textSize="20sp" />
+
+                    <TableRow
+                        android:id="@+id/tableRow20"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="ASSET TYPE"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtASTYPE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow21"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="MAKE"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtMAKE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow22"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="MODEL"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtMODEL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow23"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="YEAR"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtYEAR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow24"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="VEHICLE NO"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtREGNO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow25"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="ENGINE NO"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtERGNO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow26"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="CHASSIS NO"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtCHANO"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow27"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="SUPPLIER"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtSUPPLIER"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow28"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="DEALER"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtDELAER"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow29"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/fildesign"
+                            android:fontFamily="@font/arial"
+                            android:gravity="center_vertical"
+                            android:inputType="textCapCharacters"
+                            android:paddingLeft="10dp"
+                            android:text="INSURANCE COMP"
+                            android:textColor="#FFF"
+                            android:textSize="13dp" />
+
+                        <EditText
+                            android:id="@+id/txtINSCOM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/approve_edittxt"
+                            android:cursorVisible="true"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:fontFamily="@font/arial"
+                            android:paddingLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="13dp" />
+
+                    </TableRow>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnclcreate"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Client Details"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnguradd"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Co-applicant Details"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnDocupload"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/normalbutton"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Document Details"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btncomplete"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/completebtndesign"
+                android:fontFamily="@font/arial"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Complete Application"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

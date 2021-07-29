@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/recovery_recycle_design"
+        android:layout_height="80dp">
+
+
+    <TextView
+        android:id="@+id/TxtFacilityno"
+        android:layout_width="200dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="36dp"
+        android:text="25/02/2020"
+        android:textSize="15dp"
+        />
+
+        <ImageButton
+            android:id="@+id/dataLoad"
+            android:layout_width="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="335dp"
+            android:background="#f4f0d8"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/addnewrecord"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/Txtclname"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/arial"
+            android:layout_height="35dp"
+            android:text="T H M BHAGYA NERANJANA THELASINHA"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/TxTADDERS"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/arial"
+            android:text="T H M BHAGYA NERANJANA THELASINHA"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

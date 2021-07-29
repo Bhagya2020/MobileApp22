@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="555dp"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:padding="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginLeft="1dp"
+    card_view:cardElevation="0dp"
+    app:layout_constraintCircleRadius="0dp"
+    android:layout_marginTop="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/scroolviewdesign"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="438dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/textview_cltype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/arial"
+                android:text="Line 1"
+                android:textColor="#AD386D"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textview_nic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/arial"
+                android:text="Line 2"
+                android:textColor="#AD386D"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textview_clname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/arial"
+                android:text="Line 3"
+                android:textColor="#AD386D"
+                android:textSize="13dp" />
+
+        </TableRow>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/arial"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="320dp"
+        android:text="Edit" />
+
+</androidx.cardview.widget.CardView>

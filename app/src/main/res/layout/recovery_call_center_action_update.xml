@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TxtAssingCaseName"
+        android:layout_width="match_parent"
+        android:text="Action Update"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="#740966"
+        android:fontFamily="@font/arial"
+        android:textColor="#FFF"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/TxtAssingFacno"
+        android:layout_width="match_parent"
+        android:text="Facility No - HLELE19201844788"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/edittextdesign"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="#740966"
+        android:layout_height="40dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Action Type"
+                android:textSize="15dp"
+                android:textColor="#740966"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <Spinner
+                android:id="@+id/spnAcgioncode"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/recoveryedittexyt"
+                android:fontFamily="@font/arial"
+                android:textColor="#9D9BA2"
+                android:textStyle="bold">
+
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="PTP Date"
+                android:textSize="15dp"
+                android:textColor="#740966"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/TxtcolDate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="90dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="PTP Amount"
+                android:textSize="15dp"
+                android:textColor="#740966"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/Txtptpamount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginTop="130dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Comment"
+                android:textSize="15dp"
+                android:textColor="#740966"
+                android:fontFamily="@font/arial"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/Txtcomment"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:textSize="15sp"
+                android:background="@drawable/recoveryedittexyt"
+                android:gravity="center"
+                android:fontFamily="@font/arial"
+                android:layout_alignParentTop="true"
+                />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="250dp"
+            android:layout_alignParentTop="true"
+            android:background="#720b98"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:fontFamily="@font/arial"
+            android:textColor="#FFF"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

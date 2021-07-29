@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.AFiMOBILE.afslmobileapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+
+    <application
+        android:name=".GlobleClassDetails"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/sildmain"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Call_center_mywallet_main">
+            <intent-filter>
+                <action android:name="android.intent.Call_center_mywallet_main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_Call_Center_Action_Update">
+            <intent-filter>
+                <action android:name="android.intent.Recovery_Call_Center_Action_Update" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_Call_Fac_Details">
+            <intent-filter>
+                <action android:name="android.intent.Recovery_Call_Fac_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_Call_action_home">
+            <intent-filter>
+                <action android:name="android.intent.Recovery_Call_action_home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_Monotrium_List">
+            <intent-filter>
+                <action android:name="android.intent.Recovery_Monotrium_List" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_IFRS_Details">
+            <intent-filter>
+                <action android:name="android.intent.Recovery_IFRS_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Update_Travel_distance">
+            <intent-filter>
+                <action android:name="android.intent.Update_Travel_distance" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Travel_Distance_updte">
+            <intent-filter>
+                <action android:name="android.intent.Travel_Distance_updte" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recover_Visit_Informastion">
+            <intent-filter>
+                <action android:name="android.intent.Re_Finance_Check" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Re_Finance_Check">
+            <intent-filter>
+                <action android:name="android.intent.Re_Finance_Check" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Document_Upload_New">
+            <intent-filter>
+                <action android:name="android.intent.document_uplaod_new" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Rmv_Facility_Update_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Rmv_Facility_Update_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Rmv_Verification_Update">
+            <intent-filter>
+                <action android:name="android.intent.action.Rmv_Verification_Update" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Rmv_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.Rmv_Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_Informaton">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Informaton" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Recovery_Buket_Movement">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Buket_Movement" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Draft_Application">
+            <intent-filter>
+                <action android:name="android.intent.action.Draft_Application" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TrialCalculater">
+            <intent-filter>
+                <action android:name="android.intent.action.TrialCalculater" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Po_Web_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Po_Web_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Action_History">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Action_History" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Overview_Paid_Details">
+            <intent-filter>
+                <action android:name="android.intent.action.Overview_Paid_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_cash_deposit">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_cash_deposit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Cash_Wallet">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Cash_Wallet" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Distance_Update">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Distance_Update" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Distance_Details">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Distance_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Visit_Plan_Facility">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Visit_Plan_Facility" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Repocess_Transer">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Repocess_Transer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Request_Pending_Case">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Request_Pending_Case" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Request_Fac_List">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Request_Fac_List" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Manager_Assign">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Manager_Assign" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Search_Facility">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Search_Facility" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Actin_Tranfer">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Actin_Tranfer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Recovery_location_Map"
+            android:label="My Ma">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_location_Map" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".Recovery_Comment_Only_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Comment_Only_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Hand_Over_Details">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Hand_Over_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Refuse_Pay_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Refuse_Pay_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_PTP_Details_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_PTP_Details_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Police_Complaint_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Police_Complaint_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Meeting_Request_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Meeting_Request_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Collection_Entry_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Collection_Entry_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Asset_Verfica_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Asset_Verfica_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_View_Facility_Other">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_View_Facility_Other" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Facility_Details_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Facility_Details_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Facility_List_View">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Facility_List_View" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_MyCase_Main">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_MyCase_Main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Mywallet_Main">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Mywallet_Main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Home" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recovery_Password">
+            <intent-filter>
+                <action android:name="android.intent.action.Recovery_Password" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View_Notification_Details">
+            <intent-filter>
+                <action android:name="android.intent.action.View_Notification_Details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".House_Visit_update">
+            <intent-filter>
+                <action android:name="android.intent.action.House_Visit_update" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".house_visit_application">
+            <intent-filter>
+                <action android:name="android.intent.action.house_visit_application" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".image_zoom">
+            <intent-filter>
+                <action android:name="android.intent.action.image_zoom" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".manager_doc_view">
+            <intent-filter>
+                <action android:name="android.intent.action.manager_doc_view" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Po_Pdf_Viwer">
+            <intent-filter>
+                <action android:name="android.intent.action.Po_Pdf_Viwer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DocumentUpload">
+            <intent-filter>
+                <action android:name="android.intent.action.DocumentUpload" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClientGurnterDetails">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.ClientGurnterDetails"
+                    android:windowSoftInputMode="adjustResize" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClientDetailsAdd">
+            <intent-filter>
+                <action android:name="android.intent.action.ClientDetailsAdd" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ApplcationSubmitMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.ApplcationSubmitMenu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SubmitApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.SubmitApplication" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ManagerApprove">
+            <intent-filter>
+                <action android:name="android.intent.action.ManagerApprove" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.CreateApplication" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Application">
+            <intent-filter>
+                <action android:name="android.intent.action.Application" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Setting">
+            <intent-filter>
+                <action android:name="android.intent.action.Setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LeasingHome">
+            <intent-filter>
+                <action android:name="android.intent.action.LeasingHome" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Leasing_Password">
+            <intent-filter>
+                <action android:name="android.intent.action.Leasing_Password" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

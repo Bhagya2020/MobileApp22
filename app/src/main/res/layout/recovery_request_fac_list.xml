@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/recoveryhedingmain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="Request Manager Responses"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="right"
+                    android:text="Total Request "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxttotRequesr"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="right"
+                    android:text="Accepted Request "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtAceptRequest"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="right"
+                    android:text="Reject Request "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtRejectRequest"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="right"
+                    android:text="Complete Request "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TxtcompleteRequest"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="#740966"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="right"
+                    android:text="Pending Accept"
+                    android:textColor="#8B0000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TxtPendingAccept"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="#8B0000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="right"
+                    android:text="Pending Complete"
+                    android:textColor="#8B0000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TxtPendingCompelet"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="25"
+                    android:textColor="#8B0000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRequestFacility"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#720b98"
+            android:fontFamily="@font/arial"
+            android:text="Pending Request"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ReyFacList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

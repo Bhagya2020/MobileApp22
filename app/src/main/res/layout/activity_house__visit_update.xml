@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:orientation="vertical"
+    tools:context=".House_Visit_update">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hedingdesign"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="VISIT DETAILS"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TxtDataSts"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="OFFLINE"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/txttext3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Client Details"
+            android:textColor="#A73297"
+            android:textSize="20sp"
+            app:fontFamily="@font/arial" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/approve_edittxt"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="130dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="APPLICATION"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/tappno"
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:text="APPLICATION NO"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="CLIENT NAME"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txtclname"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="CLIENT NAME"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="160dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="address"
+                    android:textAllCaps="true"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txadders"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="Address"
+                    android:textAllCaps="true"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:text="NIC       "
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txtclnic"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center_vertical"
+                    android:text="Nic"
+                    android:textColor="#A73297"
+                    android:textSize="13dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txadders2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:fontFamily="@font/arial"
+            android:gravity="bottom|center_vertical"
+            android:textColor="#AD386D"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txttext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Saved Location"
+                    android:textColor="#A73297"
+                    android:textSize="20dp"
+                    app:fontFamily="@font/arial" />
+
+                <TextView
+                    android:id="@+id/txtSaveLoca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/approve_edittxt"
+                    android:fontFamily="@font/arial"
+                    android:text=""
+                    android:textColor="#AD386D"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnlocastion"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/normalbutton"
+                    android:fontFamily="@font/arial"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="Get Location"
+                    android:textColor="#FFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/normalbutton"
+            android:fontFamily="@font/arial"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Save"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnfinash"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/normalbutton"
+            android:fontFamily="@font/arial"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="Finish"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

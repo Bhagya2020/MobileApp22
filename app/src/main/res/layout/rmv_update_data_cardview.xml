@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    app:cardBackgroundColor="#d3d3d3"
+    android:padding="10dp"
+    android:layout_margin="3dp"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtno"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounnd_text_view"
+            android:fontFamily="@font/arial"
+            android:gravity="center_vertical"
+            android:text="HO"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnviewdata"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/normalbutton"
+            android:fontFamily="@font/arial"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text=":::::"
+            android:textColor="#FAF7FA"
+            android:textSize="13dp"
+            app:layout_constraintVertical_bias="0.986" />
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="90dp"
+            >
+
+            <TextView
+                android:id="@+id/txtREG_NO"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="AWEXHHEHHHHDHHC"
+                android:textColor="#6e4b35"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="90dp"
+            >
+            <TextView
+                android:id="@+id/txtENGINE_NO"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial"
+                android:gravity="center_vertical"
+                android:text="AAAAAAAAAAAAAAAA"
+                android:textColor="#6e4b35"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="90dp"
+            >
+
+            <TextView
+                android:id="@+id/txtCHASSI_NO"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/arial"
+                android:text="AAAAAAAAAAAAAAAA"
+                android:textColor="#6e4b35"
+                android:gravity="center_vertical"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
